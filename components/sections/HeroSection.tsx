@@ -14,6 +14,7 @@ const personas = [
   {
     role: 'Therapist',
     initials: 'T',
+    image: '/persona-therapist.png',
     tagline: 'Listens. Also judges. Mostly listens.',
   },
   {
@@ -82,15 +83,26 @@ export default function HeroSection({ stars }: HeroSectionProps) {
         </div>
 
         {/* Persona cards grid */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {personas.map((persona) => (
             <div
               key={persona.role}
               className="flex flex-col rounded-xl border border-border-default bg-canvas-subtle p-6"
             >
-              {/* Placeholder image — styled div with initials */}
-              <div className="mb-4 flex h-32 w-full items-center justify-center rounded-lg bg-canvas-inset">
-                <span className="text-4xl font-bold text-nvidia">{persona.initials}</span>
+              {/* Persona image or initials placeholder */}
+              <div className="mb-4 h-64 w-full overflow-hidden rounded-lg bg-canvas-inset">
+                {'image' in persona && persona.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={persona.image}
+                    alt={persona.role}
+                    className="h-full w-full object-cover object-top"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center">
+                    <span className="text-4xl font-bold text-nvidia">{persona.initials}</span>
+                  </div>
+                )}
               </div>
               {/* Role label */}
               <p className="text-xs font-medium uppercase tracking-widest text-nvidia">

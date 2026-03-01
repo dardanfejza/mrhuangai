@@ -29,11 +29,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The footer displays the GitHub repo link, open-source license badge, and "not affiliated with NVIDIA" attribution on every page
   4. The site renders correctly from 375px mobile to 1440px desktop without horizontal overflow or broken layouts
   5. Code blocks anywhere on the site display syntax highlighting in the GitHub dark theme and include a working copy-to-clipboard button
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Next.js 16 scaffold, Tailwind v4 @theme design tokens, static export config
+- [ ] 01-02-PLAN.md — Sticky nav with GitHub stars CTA + footer with NVIDIA attribution
+- [ ] 01-03-PLAN.md — CodeBlock server component with shiki highlighting + CopyButton client component
+- [ ] 01-04-PLAN.md — Root layout wiring, homepage stub, build verification, human visual check
 
 ### Phase 2: Landing Page
 **Goal**: Visitors landing on mrhuang.ai see a complete, compelling landing page that communicates what MrHuang is, shows the three personas, highlights features and security, and drives them toward the GitHub repo
@@ -83,7 +85,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/? | Not started | - |
+| 1. Foundation | 0/4 | Not started | - |
 | 2. Landing Page | 0/? | Not started | - |
 | 3. Content Pages | 0/? | Not started | - |
 | 4. SEO and Polish | 0/? | Not started | - |

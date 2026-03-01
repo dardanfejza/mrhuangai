@@ -101,35 +101,35 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | Phase 1 | Pending |
-| FOUND-02 | Phase 1 | Pending |
-| FOUND-03 | Phase 1 | Pending |
-| FOUND-04 | Phase 1 | Pending |
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| HERO-03 | Phase 2 | Pending |
-| HERO-04 | Phase 2 | Pending |
-| FEAT-01 | Phase 2 | Pending |
-| FEAT-02 | Phase 2 | Pending |
-| FEAT-03 | Phase 2 | Pending |
-| SEC-01 | Phase 3 | Pending |
-| SEC-02 | Phase 3 | Pending |
-| SEC-03 | Phase 3 | Pending |
-| INST-01 | Phase 3 | Pending |
-| INST-02 | Phase 3 | Pending |
-| INST-03 | Phase 1 | Pending |
-| COST-01 | Phase 3 | Pending |
-| COST-02 | Phase 3 | Pending |
-| SOON-01 | Phase 2 | Pending |
-| SEO-01 | Phase 4 | Pending |
-| SEO-02 | Phase 2 | Pending |
-| SEO-03 | Phase 4 | Pending |
+| FOUND-01 | Phase 1: Foundation | Pending |
+| FOUND-02 | Phase 1: Foundation | Pending |
+| FOUND-03 | Phase 1: Foundation | Pending |
+| FOUND-04 | Phase 1: Foundation | Pending |
+| INST-03 | Phase 1: Foundation | Pending |
+| HERO-01 | Phase 2: Landing Page | Pending |
+| HERO-02 | Phase 2: Landing Page | Pending |
+| HERO-03 | Phase 2: Landing Page | Pending |
+| HERO-04 | Phase 2: Landing Page | Pending |
+| FEAT-01 | Phase 2: Landing Page | Pending |
+| FEAT-02 | Phase 2: Landing Page | Pending |
+| FEAT-03 | Phase 2: Landing Page | Pending |
+| SEC-01 | Phase 2: Landing Page | Pending |
+| SEC-02 | Phase 2: Landing Page | Pending |
+| SEC-03 | Phase 2: Landing Page | Pending |
+| SOON-01 | Phase 2: Landing Page | Pending |
+| SEO-02 | Phase 2: Landing Page | Pending |
+| INST-01 | Phase 3: Content Pages | Pending |
+| INST-02 | Phase 3: Content Pages | Pending |
+| COST-01 | Phase 3: Content Pages | Pending |
+| COST-02 | Phase 3: Content Pages | Pending |
+| SEO-01 | Phase 4: SEO and Polish | Pending |
+| SEO-03 | Phase 4: SEO and Polish | Pending |
 
 **Coverage:**
 - v1 requirements: 23 total
 - Mapped to phases: 23
-- Unmapped: 0 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-01*
-*Last updated: 2026-03-01 after initial definition*
+*Last updated: 2026-03-01 after roadmap creation*

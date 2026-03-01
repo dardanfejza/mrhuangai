@@ -47,12 +47,12 @@ Plans:
   3. A dedicated security section shows a data flow diagram (Browser to Cloudflare Tunnel to Home Server to Claude API) and callout cards for Zero Trust, PIN Protection, HMAC Verification, Path Traversal Protection, and Zod Validation
   4. A "Coming Soon" section teases native apps (Mac, iOS, Android) with a notification CTA
   5. The Jensen Huang persona cards include an "AI-generated, not affiliated with NVIDIA" disclaimer
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md — HeroSection: headline, persona cards with placeholders + disclaimers, Star on GitHub CTA, Open Source badge
+- [ ] 02-02-PLAN.md — FeaturesSection (six cards + data privacy callout) + SecuritySection (CSS data flow diagram + five security cards)
+- [ ] 02-03-PLAN.md — ComingSoonSection (Mac/iOS/Android teaser), page assembly (app/page.tsx), production build verification, human visual check
 
 ### Phase 3: Content Pages
 **Goal**: Interested visitors can navigate to dedicated pages for installation guidance and cost understanding -- the two pieces of information that convert "this looks cool" into "I'm setting this up"
@@ -86,6 +86,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 4/4 | Complete   | 2026-03-01 |
-| 2. Landing Page | 0/? | Not started | - |
+| 2. Landing Page | 0/3 | In progress | - |
 | 3. Content Pages | 0/? | Not started | - |
 | 4. SEO and Polish | 0/? | Not started | - |

@@ -11,8 +11,8 @@ Requirements for initial launch. Each maps to roadmap phases.
 
 - [x] **FOUND-01**: Site uses dark GitHub-style theme with NVIDIA green (#76b900) accent — all color tokens defined in Tailwind v4 `@theme` CSS block; dark text on green backgrounds (accessibility compliant)
 - [x] **FOUND-02**: All pages are fully responsive from 375px mobile to 1440px desktop
-- [ ] **FOUND-03**: Sticky navigation bar includes site logo/name, links to Features / Install / Cost / GitHub, and a dynamic GitHub star count CTA
-- [ ] **FOUND-04**: Footer includes GitHub repo link, open-source license badge, "not affiliated with NVIDIA" attribution
+- [x] **FOUND-03**: Sticky navigation bar includes site logo/name, links to Features / Install / Cost / GitHub, and a dynamic GitHub star count CTA
+- [x] **FOUND-04**: Footer includes GitHub repo link, open-source license badge, "not affiliated with NVIDIA" attribution
 
 ### Landing Page — Hero
 
@@ -103,8 +103,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | FOUND-01 | Phase 1: Foundation | Complete |
 | FOUND-02 | Phase 1: Foundation | Complete |
-| FOUND-03 | Phase 1: Foundation | Pending |
-| FOUND-04 | Phase 1: Foundation | Pending |
+| FOUND-03 | Phase 1: Foundation | Complete |
+| FOUND-04 | Phase 1: Foundation | Complete |
 | INST-03 | Phase 1: Foundation | Pending |
 | HERO-01 | Phase 2: Landing Page | Pending |
 | HERO-02 | Phase 2: Landing Page | Pending |

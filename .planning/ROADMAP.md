@@ -12,7 +12,7 @@ This roadmap delivers the mrhuang.ai marketing and documentation website in four
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Design system, responsive layout shell, navigation, footer, code block component, and Cloudflare Pages deploy pipeline
+- [x] **Phase 1: Foundation** - Design system, responsive layout shell, navigation, footer, code block component, and Cloudflare Pages deploy pipeline (completed 2026-03-01)
 - [ ] **Phase 2: Landing Page** - Hero with persona cards, features showcase, security section, coming soon teaser, open-source messaging, and legal disclaimers
 - [ ] **Phase 3: Content Pages** - Install guide page with 3-tier tab structure (placeholder content) and static cost breakdown section
 - [ ] **Phase 4: SEO and Polish** - Per-page meta/OG tags, sitemap, robots.txt, and performance audit
@@ -85,7 +85,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 3/4 | In Progress|  |
+| 1. Foundation | 4/4 | Complete   | 2026-03-01 |
 | 2. Landing Page | 0/? | Not started | - |
 | 3. Content Pages | 0/? | Not started | - |
 | 4. SEO and Polish | 0/? | Not started | - |

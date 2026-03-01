@@ -37,7 +37,7 @@ Requirements for initial launch. Each maps to roadmap phases.
 
 - [ ] **INST-01**: Install guide page at `/install` with 3-tier tab structure — Vibecoder (noob), Terminal User (intermediate), Bash Veteran (advanced)
 - [ ] **INST-02**: Each tier tab contains TODO placeholder content with the tier name, target audience description, and "content coming soon" structure
-- [ ] **INST-03**: Code blocks throughout the site have copy-to-clipboard button and syntax highlighting (GitHub dark theme)
+- [x] **INST-03**: Code blocks throughout the site have copy-to-clipboard button and syntax highlighting (GitHub dark theme)
 
 ### Cost Breakdown
 
@@ -105,7 +105,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUND-02 | Phase 1: Foundation | Complete |
 | FOUND-03 | Phase 1: Foundation | Complete |
 | FOUND-04 | Phase 1: Foundation | Complete |
-| INST-03 | Phase 1: Foundation | Pending |
+| INST-03 | Phase 1: Foundation | Complete |
 | HERO-01 | Phase 2: Landing Page | Pending |
 | HERO-02 | Phase 2: Landing Page | Pending |
 | HERO-03 | Phase 2: Landing Page | Pending |

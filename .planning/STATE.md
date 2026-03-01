@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-current_plan: 3
+current_plan: 4
 status: executing
-stopped_at: Completed 02-02-PLAN.md (FeaturesSection + SecuritySection)
-last_updated: "2026-03-01T20:19:43.416Z"
+stopped_at: Completed 02-03-PLAN.md (ComingSoonSection + page.tsx assembly)
+last_updated: "2026-03-01T20:22:27.371Z"
 last_activity: 2026-03-01
 progress:
   total_phases: 2
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 7
-  completed_plans: 6
+  completed_plans: 7
 ---
 
 # Project State
@@ -26,7 +26,7 @@ See: .planning/PROJECT.md (updated 2026-03-01)
 ## Current Position
 
 **Phase:** 2 of 4 (Landing Page)
-**Current Plan:** 3
+**Current Plan:** 4
 **Total Plans in Phase:** 4
 **Status:** Ready to execute
 **Last Activity:** 2026-03-01
@@ -56,6 +56,7 @@ Progress: [####░░░░░░] 40%
 | Phase 01-foundation P04 | 1min | 2 tasks | 2 files |
 | Phase 02-landing-page P01 | 2min | 1 task | 2 files |
 | Phase 02-landing-page P02 | 2 | 2 tasks | 2 files |
+| Phase 02-landing-page P03 | 3min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -82,6 +83,8 @@ Recent decisions affecting current work:
 - [Phase 02-landing-page]: FeaturesSection and SecuritySection are plain Server Components — no 'use client' directive
 - [Phase 02-landing-page]: CSS data flow diagram uses flex-col mobile / sm:flex-row desktop to prevent 375px horizontal overflow
 - [Phase 02-landing-page]: FolderLock and CheckSquare confirmed in lucide-react 0.575.0 — used directly, no fallback substitution
+- [Phase 02-landing-page]: ComingSoonSection is a plain Server Component — no 'use client', no email capture, GitHub link only (locked decision from planning)
+- [Phase 02-landing-page]: Smartphone icon used for both iOS and Android — lucide-react 0.575.0 has no separate mobile OS icons
 
 ### Pending Todos
 
@@ -94,6 +97,6 @@ None yet.
 
 ## Session Continuity
 
-**Last session:** 2026-03-01T20:19:43.415Z
-**Stopped At:** Completed 02-02-PLAN.md (FeaturesSection + SecuritySection)
+**Last session:** 2026-03-01T20:22:27.370Z
+**Stopped At:** Completed 02-03-PLAN.md (ComingSoonSection + page.tsx assembly)
 **Resume file:** None

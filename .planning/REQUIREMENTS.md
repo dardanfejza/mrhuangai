@@ -46,7 +46,7 @@ Requirements for initial launch. Each maps to roadmap phases.
 
 ### Coming Soon
 
-- [ ] **SOON-01**: "Coming Soon" teaser section for native apps — Mac, iOS, Android — with brief description and email/GitHub notification CTA
+- [x] **SOON-01**: "Coming Soon" teaser section for native apps — Mac, iOS, Android — with brief description and email/GitHub notification CTA
 
 ### SEO & Legal
 
@@ -116,7 +116,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEC-01 | Phase 2: Landing Page | Complete |
 | SEC-02 | Phase 2: Landing Page | Complete |
 | SEC-03 | Phase 2: Landing Page | Complete |
-| SOON-01 | Phase 2: Landing Page | Pending |
+| SOON-01 | Phase 2: Landing Page | Complete |
 | SEO-02 | Phase 2: Landing Page | Complete |
 | INST-01 | Phase 3: Content Pages | Pending |
 | INST-02 | Phase 3: Content Pages | Pending |

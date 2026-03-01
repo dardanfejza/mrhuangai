@@ -23,15 +23,15 @@ Requirements for initial launch. Each maps to roadmap phases.
 
 ### Landing Page — Features
 
-- [ ] **FEAT-01**: Features showcase section with cards for: AI Personas (Lifecoach / Mentor / Assistant), Persistent Knowledge Base, Voice Input (Deepgram transcription), WhatsApp Integration, Daily Journal, Dashboard with habit tracking
-- [ ] **FEAT-02**: "Your data stays on your hardware" messaging prominently displayed with visual icon/badge
+- [x] **FEAT-01**: Features showcase section with cards for: AI Personas (Lifecoach / Mentor / Assistant), Persistent Knowledge Base, Voice Input (Deepgram transcription), WhatsApp Integration, Daily Journal, Dashboard with habit tracking
+- [x] **FEAT-02**: "Your data stays on your hardware" messaging prominently displayed with visual icon/badge
 - [x] **FEAT-03**: "100% Open Source" badge and GitHub repo link in features or hero section
 
 ### Security Section
 
-- [ ] **SEC-01**: Dedicated security section with data flow diagram showing: Browser → Cloudflare Tunnel → Home Server → Claude API (only outbound call)
-- [ ] **SEC-02**: Security callout cards for: Zero Trust (Cloudflare Tunnel), PIN Protection (JWT, timing-safe), HMAC Webhook Verification, Path Traversal Protection, Zod schema validation
-- [ ] **SEC-03**: Clear "your data never leaves your hardware" message anchoring the security section
+- [x] **SEC-01**: Dedicated security section with data flow diagram showing: Browser → Cloudflare Tunnel → Home Server → Claude API (only outbound call)
+- [x] **SEC-02**: Security callout cards for: Zero Trust (Cloudflare Tunnel), PIN Protection (JWT, timing-safe), HMAC Webhook Verification, Path Traversal Protection, Zod schema validation
+- [x] **SEC-03**: Clear "your data never leaves your hardware" message anchoring the security section
 
 ### Install Guide
 
@@ -110,12 +110,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HERO-02 | Phase 2: Landing Page | Complete |
 | HERO-03 | Phase 2: Landing Page | Complete |
 | HERO-04 | Phase 2: Landing Page | Complete |
-| FEAT-01 | Phase 2: Landing Page | Pending |
-| FEAT-02 | Phase 2: Landing Page | Pending |
+| FEAT-01 | Phase 2: Landing Page | Complete |
+| FEAT-02 | Phase 2: Landing Page | Complete |
 | FEAT-03 | Phase 2: Landing Page | Complete |
-| SEC-01 | Phase 2: Landing Page | Pending |
-| SEC-02 | Phase 2: Landing Page | Pending |
-| SEC-03 | Phase 2: Landing Page | Pending |
+| SEC-01 | Phase 2: Landing Page | Complete |
+| SEC-02 | Phase 2: Landing Page | Complete |
+| SEC-03 | Phase 2: Landing Page | Complete |
 | SOON-01 | Phase 2: Landing Page | Pending |
 | SEO-02 | Phase 2: Landing Page | Complete |
 | INST-01 | Phase 3: Content Pages | Pending |

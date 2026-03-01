@@ -16,16 +16,16 @@ Requirements for initial launch. Each maps to roadmap phases.
 
 ### Landing Page — Hero
 
-- [ ] **HERO-01**: Hero section displays headline "Meet MrHuang" with sub-copy leaning into the "Super smart. Also kinda dumb. Amazing." paradox
-- [ ] **HERO-02**: Three AI-generated Jensen Huang persona cards displayed in hero — Mentor, Therapist, Life Coach — each with role label and brief description
-- [ ] **HERO-03**: Primary "Star on GitHub" CTA button in hero section
-- [ ] **HERO-04**: Self-aware meta-humorous tone applied throughout the landing page copy (e.g., "yes, this site was also written with MrHuang")
+- [x] **HERO-01**: Hero section displays headline "Meet MrHuang" with sub-copy leaning into the "Super smart. Also kinda dumb. Amazing." paradox
+- [x] **HERO-02**: Three AI-generated Jensen Huang persona cards displayed in hero — Mentor, Therapist, Life Coach — each with role label and brief description
+- [x] **HERO-03**: Primary "Star on GitHub" CTA button in hero section
+- [x] **HERO-04**: Self-aware meta-humorous tone applied throughout the landing page copy (e.g., "yes, this site was also written with MrHuang")
 
 ### Landing Page — Features
 
 - [ ] **FEAT-01**: Features showcase section with cards for: AI Personas (Lifecoach / Mentor / Assistant), Persistent Knowledge Base, Voice Input (Deepgram transcription), WhatsApp Integration, Daily Journal, Dashboard with habit tracking
 - [ ] **FEAT-02**: "Your data stays on your hardware" messaging prominently displayed with visual icon/badge
-- [ ] **FEAT-03**: "100% Open Source" badge and GitHub repo link in features or hero section
+- [x] **FEAT-03**: "100% Open Source" badge and GitHub repo link in features or hero section
 
 ### Security Section
 
@@ -51,7 +51,7 @@ Requirements for initial launch. Each maps to roadmap phases.
 ### SEO & Legal
 
 - [ ] **SEO-01**: Each page has unique `<title>`, `<meta description>`, and Open Graph tags (title, description, image)
-- [ ] **SEO-02**: AI-generated image disclaimer on Jensen Huang persona cards — "AI-generated, not affiliated with NVIDIA or Jensen Huang"
+- [x] **SEO-02**: AI-generated image disclaimer on Jensen Huang persona cards — "AI-generated, not affiliated with NVIDIA or Jensen Huang"
 - [ ] **SEO-03**: Site generates sitemap and robots.txt at build time
 
 ## v2 Requirements
@@ -106,18 +106,18 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUND-03 | Phase 1: Foundation | Complete |
 | FOUND-04 | Phase 1: Foundation | Complete |
 | INST-03 | Phase 1: Foundation | Complete |
-| HERO-01 | Phase 2: Landing Page | Pending |
-| HERO-02 | Phase 2: Landing Page | Pending |
-| HERO-03 | Phase 2: Landing Page | Pending |
-| HERO-04 | Phase 2: Landing Page | Pending |
+| HERO-01 | Phase 2: Landing Page | Complete |
+| HERO-02 | Phase 2: Landing Page | Complete |
+| HERO-03 | Phase 2: Landing Page | Complete |
+| HERO-04 | Phase 2: Landing Page | Complete |
 | FEAT-01 | Phase 2: Landing Page | Pending |
 | FEAT-02 | Phase 2: Landing Page | Pending |
-| FEAT-03 | Phase 2: Landing Page | Pending |
+| FEAT-03 | Phase 2: Landing Page | Complete |
 | SEC-01 | Phase 2: Landing Page | Pending |
 | SEC-02 | Phase 2: Landing Page | Pending |
 | SEC-03 | Phase 2: Landing Page | Pending |
 | SOON-01 | Phase 2: Landing Page | Pending |
-| SEO-02 | Phase 2: Landing Page | Pending |
+| SEO-02 | Phase 2: Landing Page | Complete |
 | INST-01 | Phase 3: Content Pages | Pending |
 | INST-02 | Phase 3: Content Pages | Pending |
 | COST-01 | Phase 3: Content Pages | Pending |

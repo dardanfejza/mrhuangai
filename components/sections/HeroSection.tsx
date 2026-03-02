@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Star, Github } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -90,13 +91,13 @@ export default function HeroSection({ stars }: HeroSectionProps) {
               className="flex flex-col rounded-xl border border-border-default bg-canvas-subtle p-6"
             >
               {/* Persona image or initials placeholder */}
-              <div className="mb-4 h-64 w-full overflow-hidden rounded-lg bg-canvas-inset">
+              <div className="relative mb-4 h-64 w-full overflow-hidden rounded-lg bg-canvas-inset">
                 {'image' in persona && persona.image ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
+                  <Image
                     src={persona.image}
                     alt={persona.role}
-                    className="h-full w-full object-cover object-top"
+                    fill
+                    className="object-cover object-top"
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center">

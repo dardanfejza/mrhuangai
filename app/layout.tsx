@@ -28,6 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} ${geistMono.variable}`}>
       <body className="flex min-h-dvh flex-col bg-canvas-default font-sans antialiased">
+        {/* Alpha banner */}
+        <div className="w-full bg-nvidia/10 border-b border-nvidia/20 py-2 text-center text-xs text-nvidia">
+          🚧 Alpha — not yet released. Coming soon.
+        </div>
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

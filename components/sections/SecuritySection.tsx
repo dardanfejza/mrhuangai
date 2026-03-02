@@ -1,23 +1,37 @@
 import { ShieldCheck, Lock, Shield, FolderLock, CheckSquare } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
-const flowNodes = [
-  { label: 'Browser',           sublabel: 'You',             highlight: false, outbound: false },
-  { label: 'Cloudflare Tunnel', sublabel: 'Zero Trust',      highlight: false, outbound: false },
-  { label: 'Home Server',       sublabel: 'Your hardware',   highlight: true,  outbound: false },
-  { label: 'Claude API',        sublabel: 'Only outbound ↑', highlight: false, outbound: true  },
+const routes = [
+  {
+    label: 'WhatsApp',
+    nodes: [
+      { label: 'WhatsApp',           sublabel: 'Meta webhook',    highlight: false, outbound: false },
+      { label: 'Cloudflare Tunnel',  sublabel: 'Zero Trust',      highlight: false, outbound: false },
+      { label: 'Home Server',        sublabel: 'Your hardware',   highlight: true,  outbound: false },
+      { label: 'Claude API',         sublabel: 'Only outbound ↑', highlight: false, outbound: true  },
+    ],
+  },
+  {
+    label: 'Direct',
+    nodes: [
+      { label: 'You',                sublabel: 'Browser / app',   highlight: false, outbound: false },
+      { label: 'Tailscale',          sublabel: 'Private VPN',     highlight: false, outbound: false },
+      { label: 'Home Server',        sublabel: 'Your hardware',   highlight: true,  outbound: false },
+      { label: 'Claude API',         sublabel: 'Only outbound ↑', highlight: false, outbound: true  },
+    ],
+  },
 ]
 
 const securityItems = [
   {
     icon: ShieldCheck,
-    title: 'Zero Trust',
-    desc: 'Cloudflare Tunnel — no open ports, no exposed IP, no VPN required.',
+    title: 'Cloudflare Tunnel (WhatsApp)',
+    desc: 'WhatsApp webhooks route through Cloudflare Tunnel — no open ports, no exposed IP.',
   },
   {
     icon: Lock,
-    title: 'PIN Protection',
-    desc: 'JWT tokens with timing-safe compare. Brute force is not invited.',
+    title: 'Tailscale (Direct access)',
+    desc: 'Everything else goes over Tailscale — a private encrypted mesh VPN. Only your devices.',
   },
   {
     icon: Shield,
@@ -54,40 +68,48 @@ export default function SecuritySection() {
           </p>
         </div>
 
-        {/* CSS data flow diagram — four nodes */}
-        <div className="mb-12 rounded-xl border border-border-default bg-canvas-subtle p-6">
-          <div className="flex flex-col items-center gap-0 sm:flex-row sm:flex-wrap sm:justify-center">
-            {flowNodes.map((node, i) => (
-              <div key={node.label} className="flex flex-col items-center sm:flex-row">
-                {/* Node box */}
-                <div
-                  className={cn(
-                    'min-w-[120px] rounded-lg border px-4 py-3 text-center',
-                    node.highlight
-                      ? 'border-nvidia/50 bg-canvas-subtle ring-1 ring-nvidia/30'
-                      : node.outbound
-                      ? 'border-border-muted bg-canvas-inset opacity-70'
-                      : 'border-border-default bg-canvas-inset'
-                  )}
-                >
-                  <p className="text-sm font-semibold text-fg-default">{node.label}</p>
-                  <p className="text-xs text-fg-subtle">{node.sublabel}</p>
-                </div>
-
-                {/* Arrow connector — hidden after last node */}
-                {i < flowNodes.length - 1 && (
-                  <div className="flex items-center py-2 sm:px-2 sm:py-0">
-                    {/* Vertical arrow on mobile, horizontal on sm+ */}
-                    <span className="text-lg text-border-default sm:hidden">↓</span>
-                    <div className="hidden items-center sm:flex">
-                      <div className="h-px w-6 bg-border-default" />
-                      <div className="h-0 w-0 border-y-4 border-l-4 border-y-transparent border-l-border-default" />
+        {/* CSS data flow diagram — two routes */}
+        <div className="mb-12 space-y-3 rounded-xl border border-border-default bg-canvas-subtle p-6">
+          {routes.map((route, ri) => (
+            <div key={route.label}>
+              {ri > 0 && <div className="my-3 border-t border-border-default" />}
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+                {/* Route label */}
+                <span className="w-20 shrink-0 text-xs font-medium text-fg-subtle">
+                  {route.label}
+                </span>
+                {/* Nodes */}
+                <div className="flex flex-col items-start gap-0 sm:flex-row sm:items-center">
+                  {route.nodes.map((node, i) => (
+                    <div key={node.label} className="flex flex-col items-center sm:flex-row">
+                      <div
+                        className={cn(
+                          'min-w-[110px] rounded-lg border px-3 py-2 text-center',
+                          node.highlight
+                            ? 'border-nvidia/50 bg-canvas-default ring-1 ring-nvidia/30'
+                            : node.outbound
+                            ? 'border-border-muted bg-canvas-inset opacity-70'
+                            : 'border-border-default bg-canvas-inset'
+                        )}
+                      >
+                        <p className="text-xs font-semibold text-fg-default">{node.label}</p>
+                        <p className="text-xs text-fg-subtle">{node.sublabel}</p>
+                      </div>
+                      {i < route.nodes.length - 1 && (
+                        <div className="flex items-center py-1 sm:px-2 sm:py-0">
+                          <span className="text-border-default sm:hidden">↓</span>
+                          <div className="hidden items-center sm:flex">
+                            <div className="h-px w-4 bg-border-default" />
+                            <div className="h-0 w-0 border-y-4 border-l-4 border-y-transparent border-l-border-default" />
+                          </div>
+                        </div>
+                      )}
                     </div>
-                  </div>
-                )}
+                  ))}
+                </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
         {/* Five security callout cards */}

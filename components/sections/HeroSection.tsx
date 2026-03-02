@@ -88,33 +88,57 @@ export default function HeroSection({ stars }: HeroSectionProps) {
           {personas.map((persona) => (
             <div
               key={persona.role}
-              className="flex flex-col rounded-xl border border-border-default bg-canvas-subtle p-6"
+              className="relative flex min-h-96 flex-col overflow-hidden rounded-xl border border-border-default bg-canvas-subtle"
             >
-              {/* Persona image or initials placeholder */}
-              <div className="relative mb-4 h-64 w-full overflow-hidden rounded-lg bg-canvas-inset">
-                {'image' in persona && persona.image ? (
+              {'image' in persona && persona.image ? (
+                <>
+                  {/* Full-bleed image */}
                   <Image
                     src={persona.image}
                     alt={persona.role}
                     fill
                     className="object-cover object-top"
                   />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center">
-                    <span className="text-4xl font-bold text-nvidia">{persona.initials}</span>
+                  {/* Edge + bottom gradient: fades image into card bg */}
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background: [
+                        'linear-gradient(to bottom, rgba(22,27,34,0) 35%, rgba(22,27,34,0.98) 72%)',
+                        'linear-gradient(to right, rgba(22,27,34,0.75) 0%, rgba(22,27,34,0) 18%)',
+                        'linear-gradient(to left, rgba(22,27,34,0.75) 0%, rgba(22,27,34,0) 18%)',
+                        'linear-gradient(to bottom, rgba(22,27,34,0.55) 0%, rgba(22,27,34,0) 14%)',
+                      ].join(', '),
+                    }}
+                  />
+                  {/* Text overlay at bottom */}
+                  <div className="relative z-10 mt-auto p-6">
+                    <p className="text-xs font-medium uppercase tracking-widest text-nvidia">
+                      {persona.role}
+                    </p>
+                    <p className="mt-1 text-sm text-fg-muted">{persona.tagline}</p>
+                    <p className="mt-4 text-xs text-fg-subtle">
+                      AI-generated, not affiliated with NVIDIA or Jensen Huang
+                    </p>
                   </div>
-                )}
-              </div>
-              {/* Role label */}
-              <p className="text-xs font-medium uppercase tracking-widest text-nvidia">
-                {persona.role}
-              </p>
-              {/* Tagline */}
-              <p className="mt-1 text-sm text-fg-muted">{persona.tagline}</p>
-              {/* Disclaimer — on every card, not in footer */}
-              <p className="mt-auto pt-4 text-xs text-fg-subtle">
-                AI-generated, not affiliated with NVIDIA or Jensen Huang
-              </p>
+                </>
+              ) : (
+                <>
+                  {/* Initials placeholder */}
+                  <div className="flex flex-1 items-center justify-center py-16">
+                    <span className="text-5xl font-bold text-nvidia">{persona.initials}</span>
+                  </div>
+                  <div className="p-6 pt-0">
+                    <p className="text-xs font-medium uppercase tracking-widest text-nvidia">
+                      {persona.role}
+                    </p>
+                    <p className="mt-1 text-sm text-fg-muted">{persona.tagline}</p>
+                    <p className="mt-6 text-xs text-fg-subtle">
+                      AI-generated, not affiliated with NVIDIA or Jensen Huang
+                    </p>
+                  </div>
+                </>
+              )}
             </div>
           ))}
         </div>

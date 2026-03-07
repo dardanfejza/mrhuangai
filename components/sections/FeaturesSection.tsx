@@ -1,4 +1,8 @@
-import { Brain, BookOpen, Mic, MessageCircle, BookHeart, LayoutDashboard, Shield } from 'lucide-react'
+import {
+  Brain, BookOpen, Mic, MessageCircle, BookHeart, LayoutDashboard,
+  Shield, Users, TrendingUp, BellRing, FolderKanban, Archive,
+  MessageSquare, Palette, Radio,
+} from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const features = [
@@ -15,12 +19,12 @@ const features = [
   {
     icon: Mic,
     title: 'Voice Input',
-    desc: 'Deepgram transcription — speak, it listens. Mostly correctly.',
+    desc: 'Deepgram Nova-3 transcription — speak, it listens. Works in the browser and over WhatsApp voice notes.',
   },
   {
     icon: MessageCircle,
     title: 'WhatsApp Integration',
-    desc: 'Chat with MrHuang on the app you already have open anyway.',
+    desc: 'Text, voice notes, check-ins — MrHuang lives in the app you already have open.',
   },
   {
     icon: BookHeart,
@@ -32,6 +36,46 @@ const features = [
     title: 'Dashboard',
     desc: 'Habit tracking. It notices when you stop showing up.',
   },
+  {
+    icon: Users,
+    title: 'Meeting Assistant',
+    desc: 'Real-time transcript de-fragmentation, auto-generated minutes, participant tracking. Three-panel UI.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Pattern Recognition',
+    desc: 'Weekly behavioral scans — stalled goals, recurring themes, values misalignment. MrHuang sees the patterns you don\u2019t.',
+  },
+  {
+    icon: BellRing,
+    title: 'Proactive Check-ins',
+    desc: 'Disappear for 14 days and MrHuang texts you on WhatsApp. Not clingy — just concerned.',
+  },
+  {
+    icon: FolderKanban,
+    title: 'Project Tracking',
+    desc: 'Registry-driven project dashboard. MrHuang updates status and blockers directly from chat.',
+  },
+  {
+    icon: Archive,
+    title: 'Conversation Memory',
+    desc: 'Auto-archives significant conversations with summaries, key points, and goal references. Thread titles generated on the fly.',
+  },
+  {
+    icon: Palette,
+    title: 'Kindle Themes',
+    desc: 'Four TUI variants — White, Sepia, Green, Black. Because staring at a terminal should feel like reading.',
+  },
+  {
+    icon: Radio,
+    title: 'Real-time Streaming',
+    desc: 'Server-Sent Events, not polling. Responses stream in as they\u2019re generated — instant, not batched.',
+  },
+  {
+    icon: MessageSquare,
+    title: 'Thread Summaries',
+    desc: 'SQLite-backed thread metadata with auto-generated titles and hover tooltips. Find old conversations without scrolling.',
+  },
 ]
 
 export default function FeaturesSection() {
@@ -41,7 +85,7 @@ export default function FeaturesSection() {
         {/* Section heading */}
         <div className="mb-10 text-center">
           <h2 className="mb-3 text-3xl font-bold tracking-tight text-fg-default sm:text-4xl">
-            Six ways MrHuang makes itself useful
+            Everything MrHuang actually does
           </h2>
           <p className="text-fg-muted">Not always perfectly. But consistently.</p>
         </div>
@@ -55,7 +99,7 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        {/* Six feature cards in 2-col / 3-col grid */}
+        {/* Feature cards in 2-col / 3-col grid */}
         <div className={cn('grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3')}>
           {features.map(({ icon: Icon, title, desc }) => (
             <div

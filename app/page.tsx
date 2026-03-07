@@ -4,6 +4,7 @@ import HeroSection from '@/components/sections/HeroSection'
 import FeaturesSection from '@/components/sections/FeaturesSection'
 import SecuritySection from '@/components/sections/SecuritySection'
 import ComingSoonSection from '@/components/sections/ComingSoonSection'
+import AlwaysListeningSection from '@/components/sections/AlwaysListeningSection'
 import ParallaxMascot from '@/components/ParallaxMascot'
 import { getStarCount } from '@/lib/github'
 
@@ -17,6 +18,7 @@ export default async function HomePage() {
         <HeroSection stars={stars} />
         <FeaturesSection />
         <SecuritySection />
+        <AlwaysListeningSection />
         <ComingSoonSection />
       </div>
     </div>

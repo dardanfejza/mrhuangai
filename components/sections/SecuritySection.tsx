@@ -1,4 +1,4 @@
-import { ShieldCheck, Lock, Shield, FolderLock, CheckSquare } from 'lucide-react'
+import { ShieldCheck, Lock, Shield, FolderLock, CheckSquare, KeyRound, Fingerprint, ShieldBan } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const routes = [
@@ -47,6 +47,21 @@ const securityItems = [
     icon: CheckSquare,
     title: 'Zod Schema Validation',
     desc: 'Every API input validated at runtime. Garbage in, error out.',
+  },
+  {
+    icon: KeyRound,
+    title: 'Mutual TLS (mTLS)',
+    desc: 'Client certificates required over Tailscale. No cert, no access — not even on the same network.',
+  },
+  {
+    icon: Fingerprint,
+    title: 'PIN + HMAC Token Auth',
+    desc: 'HMAC-SHA256 signed session tokens with 24h TTL. Rate-limited PIN entry with brute force lockout.',
+  },
+  {
+    icon: ShieldBan,
+    title: 'AI Tool Sandboxing',
+    desc: 'Claude\u2019s tools are restricted — no shell, no web access, file ops sandboxed to data directory only.',
   },
 ]
 

@@ -30,7 +30,7 @@ export default function ParallaxMascot() {
         backgroundSize: 'auto 300%',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center 0%',
-        opacity: 0.25,
+        opacity: 0.125,
         filter: 'invert(1)',
       }}
     />

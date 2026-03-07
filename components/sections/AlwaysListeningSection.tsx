@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Mic, Cpu, Wifi, Zap, Volume2, Github } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -21,19 +22,32 @@ export default function AlwaysListeningSection() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-10 text-center">
-          <p className="mb-3 inline-block rounded-full border border-nvidia/30 bg-nvidia/10 px-4 py-1 font-mono text-xs font-semibold tracking-widest text-nvidia">
-            MRHUANG_IS_ALWAYS_LISTENING
-          </p>
-          <h2 className="mb-3 text-3xl font-bold tracking-tight text-fg-default sm:text-4xl">
-            Put it everywhere. He&apos;ll hear you.
-          </h2>
-          <p className="mx-auto max-w-2xl text-fg-muted">
-            A tiny open-source USB mic you scatter around your home. Ask MrHuang anything,
-            from any room — he&apos;ll respond the way you like it.{' '}
-            <span className="text-fg-subtle">Smaller than a USB stick. Slightly more intrusive.</span>
-          </p>
+        {/* Header with peeking illustration */}
+        <div className="relative mb-10">
+          {/* Peeking MrHuang — positioned to the right, overlapping the header */}
+          <div className="pointer-events-none absolute -right-4 -top-8 hidden w-36 sm:block lg:-right-8 lg:-top-12 lg:w-48">
+            <Image
+              src="/listening-peek.png"
+              alt="MrHuang peeking around a corner"
+              width={192}
+              height={288}
+              className="opacity-60 drop-shadow-lg"
+            />
+          </div>
+
+          <div className="text-center">
+            <p className="mb-3 inline-block rounded-full border border-nvidia/30 bg-nvidia/10 px-4 py-1 font-mono text-xs font-semibold tracking-widest text-nvidia">
+              MRHUANG_IS_ALWAYS_LISTENING
+            </p>
+            <h2 className="mb-3 text-3xl font-bold tracking-tight text-fg-default sm:text-4xl">
+              Put it everywhere. He&apos;ll hear you.
+            </h2>
+            <p className="mx-auto max-w-2xl text-fg-muted">
+              A tiny open-source USB mic you scatter around your home. Ask MrHuang anything,
+              from any room — he&apos;ll respond the way you like it.{' '}
+              <span className="text-fg-subtle">Smaller than a USB stick. Slightly more intrusive.</span>
+            </p>
+          </div>
         </div>
 
         {/* Architecture diagram */}
